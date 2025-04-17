@@ -47,6 +47,11 @@ header {
     font-size: 16px;
 }
 
+.highlight {
+  color: #f7b300; /* Bright yellow for visibility */
+  font-weight: bold;
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;

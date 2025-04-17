@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Minimalistic Landing Page">
     <title>Amrualmn's Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="figures/Amru_logo_full.png" type="image/png">
 </head>
@@ -15,7 +16,7 @@
             <div class="nav-container">
                 <img src="figures/Amru_logo_full.png" class="logo" width="50" height="45" ></img>
                 <ul class="nav-links">
-                    <li><a href="#About">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#Publications">Publications</a></li>
                     <li><a href="#Posts">Posts</a></li>
@@ -26,13 +27,58 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <!-- <section class="hero">
         <div class="hero-text">
             <h1>Under construction!</h1>
             <p>This page is still under construction, hope it could be done soon!</p>
             <a href="#projects" class="cta-button">Discover More</a> 
         </div>
-    </section>
+    </section> -->
+    <section id="hero" 
+    class="section hero"
+    style="
+    position: relative;
+    background: url('figures/Hero_back2.JPG') no-repeat center center / cover;
+    color: white;
+    text-align: center;
+    padding: 5em 1.5em;
+  ">
+    <div style="
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    "></div>
+  
+    <div style="position: relative; z-index: 2; max-width: 750px; margin: auto;">
+    
+        <h1 style="font-size: 2.8em; margin-bottom: 0.4em;">Hi, Amru Here!</h1>
+    
+        <p style="font-size: 1.2em; margin-bottom: 1.5em; text-align: justify;">
+            I’m a graduate student in the <strong>Physics Dept. — NCHU</strong>, 
+            intrigued by how <span class="highlight">quantum </span> mechanics reshapes
+            our understanding of <span class="highlight">information</span>. 
+            My research explores <span class="highlight">quantum correlations</span> 
+            in multipartite systems and <span class="highlight">device-independent scenarios</span>, 
+            using <span class="highlight">semidefinite programming</span> to uncover hidden quantum properties that were once thought <strong><em>impossible</em></strong>.
+          </p>
+          <p style="font-size: 1em; text-align: justify;">
+            Outside the world of quantum weirdness, 
+            I spend time making questionable progress on the <em>violin</em> and <em>piano</em>, 
+            capturing <em>photons</em> through lenses, and collecting <em>books</em> with the noble intention of reading them all (<em>someday</em>). 
+            Semidefinite programs may bend my brain, but <em>badminton</em> usually helps snap it back.
+          </p>
+  
+    
+        <div style="margin-top: 2em;">      
+            <a href="#about" style="padding: 0.6em 1.4em; background-color: #ffcc00; color: black; border-radius: 8px; text-decoration: none;">
+            More About Me
+            </a>
+        </div>
+    </div>
+</section>
 
     <!-- About Section -->
     <section id="about" class="section about">
@@ -50,7 +96,7 @@
                   </p>
                 
                   <p>
-                    Currently, I am a member of the <a href="https://sites.google.com/view/nchu-qit-group/" class="highlight" target="_blank">NCHU Quantum Information Group</a>, 
+                    Currently, I'm a member of the <a href="https://sites.google.com/view/nchu-qit-group/" class="highlight" target="_blank">NCHU Quantum Information Group</a>, 
                     working on problems related to <span class="highlight">Bell's nonlocality</span> and 
                     <span class="highlight">measurement incompatibility</span> in multipartite systems (quantum networks), 
                     using semidefinite programming and its relaxations.
@@ -59,14 +105,19 @@
                     on bounding quantum correlations in bilocal networks via semidefinite relaxations </a>.
                   </p>
                 
-                  <p>
-                    I earned my undergraduate degree in the <a href="https://www.its.ac.id/fisika/en/departemen-fisika-its-2/" class="highlight" target="_blank">Department of Physics</a> at 
-                    <a href="hhttps://www.its.ac.id/" class="highlight" target="_blank">Institut Teknologi Sepuluh Nopember</a> in Indonesia, 
-                    where I worked with <a href="https://www.its.ac.id/fisika/wp-content/uploads/sites/19/2021/05/11.-Agus-Purwanto.pdf" class="highlight" target="_blank">Agus Purwanto</a> on 
-                    <span class="highlight">quantum computing</span>. My thesis focused on 
-                    <a href="https://repository.its.ac.id/87717/" class="highlight" target="_blank">applying the Bernstein-Vazirani algorithm to a nuclear magnetic resonance-based quantum computer model</a>, 
-                    completed in 2021.
+                  <p style="text-align: justify; margin-bottom: 1em;">
+                    I also go by the (<em>formal</em>) Mandarin name <span class="highlight">何慕安 (Hé Mù'ān)</span>, 
+                    even though I’m not ethnically Chinese — a name my teacher chose for me, appreciating its elegance and meaningful symbolism. 
+                    Outside of research, I make (sometimes <em>half-hearted</em>) attempts to find time for my personal passions: 
+                    capturing <em>moody</em> <span class="highlight">photographs</span> that often remain buried in my digital archives, 
+                    accumulating <span class="highlight">books</span> I swear I’ll read one day, playing  <span class="highlight">badminton</span>  with a lot of enthusiasm but little finesse, 
+                    and producing sounds on the <span class="highlight">violin</span> and <span class="highlight">piano</span> that I’d prefer to call <em>“noises”</em> rather than <em>“melodies.”</em> 
+                    I’m also <span class="highlight">struggling </span> (<em>but still trying!</em>) <span class="highlight">to learn Traditional Chinese (繁體中文)</span> — a beautiful script that constantly challenges both my patience and my handwriting on regular basis.
                   </p>
+                  
+                  
+                  
+                  
             </div>
             <div class="about-photo">
               <img src="figures/Amru_profile_web.JPG" alt="Muhammad Amru Al-Amin">
@@ -90,7 +141,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section contact">
+    <!-- <section id="contact" class="section contact">
         <h2>Contact</h2>
         <form action="#">
             <input type="email" placeholder="Your email" required>
@@ -103,6 +154,99 @@
         <p>© 2025 MyLanding - All rights reserved</p>
     </footer>
 
+    <script src="script.js"></script> -->
+    <!-- <section id="contact" class="section" style="max-width: 750px; margin: 0 auto; padding: 2em 1em;">
+        <h2 style="font-size: 2em; margin-bottom: 0.8em;">Contact</h2>
+        
+        <p style="text-align: justify; font-size: 1.05em; margin-bottom: 1.5em;">
+          Got a question, a curious thought, or just want to say hi? I'm always happy to hear from fellow explorers of ideas—or anyone who's ever been puzzled by quantum weirdness.
+        </p>
+      
+        <form action="mailto:your.email@domain.com" method="POST" enctype="text/plain" style="display: flex; flex-direction: column; gap: 1em;">
+          <input type="text" name="name" placeholder="Your Name" required 
+                 style="padding: 0.8em; border-radius: 6px; border: 1px solid #ccc; font-size: 1em;">
+          
+          <input type="email" name="email" placeholder="Your Email" required 
+                 style="padding: 0.8em; border-radius: 6px; border: 1px solid #ccc; font-size: 1em;">
+          
+          <textarea name="message" placeholder="Your Message" rows="5" required 
+                    style="padding: 0.8em; border-radius: 6px; border: 1px solid #ccc; font-size: 1em;"></textarea>
+          
+          <button type="submit" 
+                  style="align-self: flex-start; padding: 0.6em 1.4em; background-color: #f7b300; color: black; border: none; border-radius: 8px; font-size: 1em; cursor: pointer;">
+            Send Message
+          </button>
+        </form>
+      </section> -->
+      <section id="contact" class="section" style="max-width: 900px; margin: 0 auto; padding: 2em 1em;">
+        <h2 style="font-size: 2em; margin-bottom: 1em;">Contact</h2>
+      
+        <div style="display: flex; flex-wrap: wrap; gap: 2em;">
+          <!-- Left: Contact Info -->
+          <div style="flex: 1; min-width: 250px;">
+            <p style="text-align: justify; font-size: 1.05em; margin-bottom: 1.5em;">
+                Questions, ideas, or just a friendly hello? I’m always glad to hear from fellow explorers—especially those puzzled by quantum weirdness.
+              </p>
+            <ul style="list-style: none; padding: 0; font-size: 1em; line-height: 2;">
+              <li><i class="fas fa-envelope" style="color: #ffcc00; margin-right: 0.5em;"></i>
+                <a href="mailto:mamrualamin@gmail.com" style="color: #ffcc00;">mamrualamin@gmail.com</a>
+              </li>
+              <li><i class="fab fa-github" style="color: #ffcc00; margin-right: 0.5em;"></i>
+                <a href="https://github.com/Amrualmn" style="color: #ffcc00;">github.com/amrualmn</a>
+              </li>
+              <li><i class="fab fa-linkedin" style="color: #ffcc00; margin-right: 0.5em;"></i>
+                <a href="https://www.linkedin.com/in/muhammad-amru-al-amin-370aa12a3/" style="color: #ffcc00;">linkedin.com/in/amrualamn</a>
+              </li>
+              <li>
+                <i class="fab fa-instagram" style="color: #ffcc00; margin-right: 0.5em;"></i>
+                <a href="https://www.instagram.com/amrualmn/" style="color: #ffcc00;">instagram.com/amrualmn</a>
+              </li>
+              <li><i class="fas fa-map-marker-alt" style="color: #ffcc00; margin-right: 0.5em;"></i>
+                Taichung, Taiwan
+              </li>
+            </ul>
+          </div>
+      
+          <!-- Right: Contact Form -->
+          <div style="flex: 1; min-width: 280px;">
+            <form action="mailto:your.email@domain.com" method="POST" enctype="text/plain" style="display: flex; flex-direction: column; gap: 1em;">
+              <input type="text" name="name" placeholder="Your Name" required 
+                     style="padding: 0.8em; border-radius: 6px; border: 1px solid #ccc; font-size: 1em;">
+              
+              <input type="email" name="email" placeholder="Your Email" required 
+                     style="padding: 0.8em; border-radius: 6px; border: 1px solid #ccc; font-size: 1em;">
+              
+              <textarea name="message" placeholder="Your Message" rows="5" required 
+                        style="padding: 0.8em; border-radius: 6px; border: 1px solid #ccc; font-size: 1em;"></textarea>
+              
+              <button type="submit" 
+                      style="align-self: flex-start; padding: 0.6em 1.4em; background-color: #f7b300; color: black; border: none; border-radius: 8px; font-size: 1em; cursor: pointer;">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- <footer>
+        <p>© 2025 MyLanding - All rights reserved</p>
+    </footer> -->
+    <footer style="background-color: #111; color: #888; padding: 1.5em 0; text-align: center; font-size: 0.95em;">
+        <p>© 2025 Amrualmn · Built with curiosity and a hint of quantum weirdness</p>
+        <!-- <div style="margin-top: 0.8em;">
+          <a href="https://github.com/Amrualmn" style="color: #ffcc00; margin: 0 0.6em;">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/muhammad-amru-al-amin-370aa12a3/" style="color: #ffcc00; margin: 0 0.6em;">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://instagram.com/yourusername" style="color: #ffcc00; margin: 0 0.6em;">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div> -->
+      </footer>
+
     <script src="script.js"></script>
+      
 </body>
 </html>
